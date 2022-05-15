@@ -63,13 +63,27 @@
    height: 100%;
 }
 
-.slideFirst:checked ~ .arrows label:nth-child(2),
-.slideSecond:checked ~ .arrows label:nth-child(2),
-.slideThird:checked ~ .arrows label:nth-child(2),
-.slideForth:checked ~ .arrows label:nth-child(2),
-.slideFifth:checked ~ .arrows label:nth-child(2){
-   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+.slideFirst:checked ~ #arrows label:nth-child(2),
+.slideSecond:checked ~ #arrows label:nth-child(3),
+.slideThird:checked ~ #arrows label:nth-child(4),
+.slideForth:checked ~ #arrows label:nth-child(5),
+.slideFifth:checked ~ #arrows label:nth-child(1){
+   background-image: url(./icons8-arrow-48.png);
+   height: 50px;
+   width: 50px;
    float:right;
    margin: 0 -50px 0 0;
+   display: block;
+}
+.slideFirst:checked ~ #arrows label:nth-child(5),
+.slideSecond:checked ~ #arrows label:nth-child(1),
+.slideThird:checked ~ #arrows label:nth-child(2),
+.slideForth:checked ~ #arrows label:nth-child(3),
+.slideFifth:checked ~ #arrows label:nth-child(4){
+   background-image: url(./icons8-arrow-pointing-left-48.png);
+   height: 50px;
+   width: 50px;
+   float:left;
+   margin: 0 0 0 -50px;
    display: block;
 }
